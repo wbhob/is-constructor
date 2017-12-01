@@ -13,5 +13,6 @@ function isConstructor(symbol: any): boolean {
 function notUndefined(item): boolean {
     return item != undefined && item != 'undefined';
 }
+namespace isConstructor { }
 
 export = isConstructor;
