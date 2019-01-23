@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import isConstructable from '../index';
+import * as isConstructable from '../index';
 
 class ConstructableTest {
     constructor() {
