@@ -1,5 +1,4 @@
 function isConstructor(symbol: any): boolean {
-    console.log(symbol.prototype);
     return notUndefined(symbol) &&
         symbol instanceof Function &&
         symbol.constructor &&
