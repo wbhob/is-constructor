@@ -1,36 +1,35 @@
 {
   "name": "is-constructor",
   "version": "1.0.2",
-  "description": "A little utility to check if an object is a constructor",
-  "main": "index.js",
-  "typings": "index.d.ts",
-  "scripts": {
-    "test": "mocha --require ts-node/register test/**/*.spec.ts",
-    "prepublish": "tsc"
+  "description": "Check if a value is a constructor function",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wbhob/is-constructor.git"
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
-    "constructor",
     "typescript",
-    "class",
-    "object",
-    "oriented"
+    "constructor",
+    "type-check",
+    "newable"
   ],
   "author": "Wilson Hobbs",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wbhob/is-constructor/issues"
-  },
-  "homepage": "https://github.com/wbhob/is-constructor#readme",
   "devDependencies": {
-    "@types/chai": "^4.0.6",
-    "@types/mocha": "^2.2.44",
-    "chai": "^4.1.2",
-    "mocha": "^4.0.1",
-    "ts-node": "^3.3.0",
-    "typescript": "^2.6.2"
+    "@types/node": "^20.16.6",
+    "typescript": "^4.6.3",
+    "vite": "^5.4.7",
+    "vite-plugin-dts": "^4.2.2",
+    "vitest": "^0.30.1"
   }
 }
