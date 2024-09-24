@@ -11,6 +11,9 @@ importers:
       '@types/node':
         specifier: ^20.16.6
         version: 20.16.6
+      reflect-metadata:
+        specifier: ^0.2.2
+        version: 0.2.2
       typescript:
         specifier: ^4.6.3
         version: 4.9.5
@@ -452,11 +455,11 @@ packages:
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
+  '@types/estree@1.0.6':
+    resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
+
   '@types/node@20.16.6':
     resolution: {integrity: sha512-T7PpxM/6yeDE+AdlVysT62BX6/bECZOmQAgiFg5NoBd5MQheZ3tzal7f1wvzfiEcmrcJNRi2zRr2nY2zF+0uqw==}
-
-  '@types/node@22.6.1':
-    resolution: {integrity: sha512-V48tCfcKb/e6cVUigLAaJDAILdMP0fUW6BidkPK4GpGjXcfbnoHasCZDwz3N3yVt5we2RHm4XTQCpv0KJz9zqw==}
 
   '@vitest/expect@0.30.1':
     resolution: {integrity: sha512-c3kbEtN8XXJSeN81iDGq29bUzSjQhjES2WR3aColsS4lPGbivwLtas4DNUe0jD9gg/FYGIteqOenfU95EFituw==}
@@ -773,6 +776,9 @@ packages:
 
   react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
+
+  reflect-metadata@0.2.2:
+    resolution: {integrity: sha512-urBwgfrvVP/eAyXx4hluJivBKzuEbSQs9rKWCrCkbSxNv8mxPcUZKeuoF3Uy4mJl3Lwprp6yy5/39VWigZ4K6Q==}
 
   require-from-string@2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
@@ -1201,7 +1207,7 @@ snapshots:
 
   '@rollup/pluginutils@5.1.2(rollup@4.22.4)':
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       estree-walker: 2.0.2
       picomatch: 2.3.1
     optionalDependencies:
@@ -1299,11 +1305,9 @@ snapshots:
 
   '@types/estree@1.0.5': {}
 
-  '@types/node@20.16.6':
-    dependencies:
-      undici-types: 6.19.8
+  '@types/estree@1.0.6': {}
 
-  '@types/node@22.6.1':
+  '@types/node@20.16.6':
     dependencies:
       undici-types: 6.19.8
 
@@ -1667,6 +1671,8 @@ snapshots:
 
   react-is@17.0.2: {}
 
+  reflect-metadata@0.2.2: {}
+
   require-from-string@2.0.2: {}
 
   resolve@1.22.8:
@@ -1759,14 +1765,14 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  vite-node@0.30.1(@types/node@22.6.1):
+  vite-node@0.30.1(@types/node@20.16.6):
     dependencies:
       cac: 6.7.14
       debug: 4.3.7
       mlly: 1.7.1
       pathe: 1.1.2
       picocolors: 1.1.0
-      vite: 4.5.5(@types/node@22.6.1)
+      vite: 4.5.5(@types/node@20.16.6)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -1796,13 +1802,13 @@ snapshots:
       - rollup
       - supports-color
 
-  vite@4.5.5(@types/node@22.6.1):
+  vite@4.5.5(@types/node@20.16.6):
     dependencies:
       esbuild: 0.18.20
       postcss: 8.4.47
       rollup: 3.29.5
     optionalDependencies:
-      '@types/node': 22.6.1
+      '@types/node': 20.16.6
       fsevents: 2.3.3
 
   vite@5.4.7(@types/node@20.16.6):
@@ -1818,7 +1824,7 @@ snapshots:
     dependencies:
       '@types/chai': 4.3.19
       '@types/chai-subset': 1.3.5
-      '@types/node': 22.6.1
+      '@types/node': 20.16.6
       '@vitest/expect': 0.30.1
       '@vitest/runner': 0.30.1
       '@vitest/snapshot': 0.30.1
@@ -1839,8 +1845,8 @@ snapshots:
       strip-literal: 1.3.0
       tinybench: 2.9.0
       tinypool: 0.4.0
-      vite: 4.5.5(@types/node@22.6.1)
-      vite-node: 0.30.1(@types/node@22.6.1)
+      vite: 4.5.5(@types/node@20.16.6)
+      vite-node: 0.30.1(@types/node@20.16.6)
       why-is-node-running: 2.3.0
     transitivePeerDependencies:
       - less
