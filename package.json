@@ -5,6 +5,14 @@
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbhob/is-constructor.git"
+  },
+  "homepage": "https://github.com/wbhob/is-constructor#readme",
+  "bugs": {
+    "url": "https://github.com/wbhob/is-constructor/issues"
+  },
   "exports": {
     ".": {
       "require": "./dist/cjs/index.js",
