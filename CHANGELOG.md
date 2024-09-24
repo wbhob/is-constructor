@@ -6,13 +6,13 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.1.0](https://github.com/wbhob/is-constructor/compare/v1.0.2...v1.1.0) (2024-09-24)
 
+- **Breaking**: Supports ESModule default imports instead of import \*
 - Use modern TypeScript
 - Use Vite to build the library
 - Use Vitest to run the tests
 - Use Github Actions to run the tests
 - Export both ESM and CJS versions of the library
 - Add types entry point for TypeScript
-- No breaking changes
 
 <a name="1.0.2"></a>
 
